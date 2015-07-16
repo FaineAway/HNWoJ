@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class QuestionBoard {
-	private Map question_categories;
+	private Map<String, QuestionCategory> question_categories;
 	
 	public QuestionBoard(HashMap constructed_map)
 	{
@@ -10,8 +10,7 @@ public class QuestionBoard {
 	}
 	
 	public Question GetNextQuestion(String category)
-	{
-		
-		return null;
+	{		
+		return question_categories.get(category).PullNextQuestion();
 	}
 }
