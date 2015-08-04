@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -7,6 +8,7 @@ public class GameDriver {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		int player_turn = 1;
 		
 		// File Parsings
 		String Category1name = "Cat1";
@@ -31,13 +33,13 @@ public class GameDriver {
 		ArrayList<String> answers1 = new ArrayList<String>();
 		answers1.add(Answer1);
 		ArrayList<String> answers2 = new ArrayList<String>();
-		answers1.add(Answer2);
+		answers2.add(Answer2);
 		ArrayList<String> answers3 = new ArrayList<String>();
-		answers1.add(Answer3);
+		answers3.add(Answer3);
 		ArrayList<String> answers4 = new ArrayList<String>();
-		answers1.add(Answer4);
+		answers4.add(Answer4);
 		ArrayList<String> answers5 = new ArrayList<String>();
-		answers1.add(Answer5);
+		answers5.add(Answer5);
 		
 		Question question1 = new Question(100, Query1, answers1);
 		Question question2 = new Question(100, Query2, answers2);
@@ -53,12 +55,22 @@ public class GameDriver {
 		questions_temp.add(question4);
 		questions_temp.add(question5);
 		
-		QuestionCategory question_cat1 = new QuestionCategory(Category1name, questions_temp);
-		QuestionCategory question_cat2 = new QuestionCategory(Category2name, questions_temp);
-		QuestionCategory question_cat3 = new QuestionCategory(Category3name, questions_temp);
-		QuestionCategory question_cat4 = new QuestionCategory(Category4name, questions_temp);
-		QuestionCategory question_cat5 = new QuestionCategory(Category5name, questions_temp);
-		QuestionCategory question_cat6 = new QuestionCategory(Category6name, questions_temp);
+		QuestionCategory question_cat1 = new QuestionCategory(Category1name);
+		QuestionCategory question_cat2 = new QuestionCategory(Category2name);
+		QuestionCategory question_cat3 = new QuestionCategory(Category3name);
+		QuestionCategory question_cat4 = new QuestionCategory(Category4name);
+		QuestionCategory question_cat5 = new QuestionCategory(Category5name);
+		QuestionCategory question_cat6 = new QuestionCategory(Category6name);
+		
+		for(Question item : questions_temp)
+		{
+			question_cat1.AddQuestion(item);
+			question_cat2.AddQuestion(item);
+			question_cat3.AddQuestion(item);
+			question_cat4.AddQuestion(item);
+			question_cat5.AddQuestion(item);
+			question_cat6.AddQuestion(item);
+		}
 		
 		HashMap<String, QuestionCategory> q_board = new HashMap<String, QuestionCategory>();
 		q_board.put(Category1name, question_cat1);
@@ -93,6 +105,30 @@ public class GameDriver {
 	    Player player1 = new Player(player1_name);
 	    Player player2 = new Player(player2_name);
 	    Player player3 = new Player(player3_name);
+	    
+	    Console console = System.console();
+	    
+	    
+	    while(true)
+	    {
+	    	Question new_question = final_question_board.GetNextQuestion("Cat2");
+	    	System.out.println(new_question.toString() + "User Response?:");
+	    	
+	    	String playerresponse = scanner.next();
+	    	
+	    	
+	    	if(new_question.CheckAnswer(playerresponse))
+	    	{
+	    	
+	    	}
+	    	else
+	    	{
+	    	
+	    	}
+	    	
+	    	
+	    	
+	    }
 	    
 	}
 }

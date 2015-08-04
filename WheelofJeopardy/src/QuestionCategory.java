@@ -7,7 +7,7 @@ public class QuestionCategory {
 	private String category;
 	private Queue<Question> question_pool;
 	
-	public QuestionCategory(String category, ArrayList<Question> questions)
+	public QuestionCategory(String category)
 	{
 		//this.index = 0;
 		this.category = category;

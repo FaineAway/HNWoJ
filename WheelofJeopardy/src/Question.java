@@ -17,7 +17,7 @@ public class Question {
 		int success = 0;
 		for(String temp : this.answer_bank)
 		{
-			if(temp == response)
+			if(temp.equals(response))
 				success = success + 1;
 		}
 		if(success > 0)
@@ -25,6 +25,10 @@ public class Question {
 		else
 			return false;
 	}
+	
+	@Override public String toString() {
+			return query;
+	  }
 	
 	public int QueryValue()
 	{
