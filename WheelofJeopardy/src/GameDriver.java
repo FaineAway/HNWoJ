@@ -88,8 +88,9 @@ public class GameDriver {
     	//parse files
     	ArrayList<String> categoryArray = new ArrayList<String>();
     	ArrayList<Question> questionArray = new ArrayList<Question>();
-    	HashMap mapOfQuestions = new HashMap();
-		
+    	HashMap mapOfQuestionsJeopardy = new HashMap();
+    	HashMap mapOfQuestionsDoubleJeopardy = new HashMap();
+    	
     	String userDir = System.getProperty("user.dir");
     	String fileName = userDir + "/../ART AND LITERATURE/categories.csv";
 		//System.out.println(fileName);
@@ -98,17 +99,20 @@ public class GameDriver {
 		
 		for (int i=0; i<6; i++){
 			String categoryName = categoryArray.get(i);
-			QuestionCategory questionCategory = new QuestionCategory(categoryName);
+			QuestionCategory questionCategoryJeopardy = new QuestionCategory(categoryName);
+			QuestionCategory questionCategoryDoubleJeopardy = new QuestionCategory(categoryName);
 	    	fileName = "C:\\WOJ1\\ART AND LITERATURE\\" + categoryName;
-			questionCategory = ReadCSV.getCategoryAndQuestions(fileName);
+			questionCategoryJeopardy = ReadCSV.getCategoryAndQuestionsJeopardy(fileName);
+			questionCategoryDoubleJeopardy = ReadCSV.getCategoryAndQuestionsDoubleJeopardy(fileName);
 			//System.out.println("category: " + categoryName);
-			mapOfQuestions.put(categoryName, questionCategory);
 			
+			mapOfQuestionsJeopardy.put(categoryName, questionCategoryJeopardy);
+			mapOfQuestionsDoubleJeopardy.put(categoryName, questionCategoryDoubleJeopardy);	
 		}
 		
 		//create question board
-		QuestionBoard questionBoard = new QuestionBoard(mapOfQuestions);
-		
+		QuestionBoard questionBoardJeopardy = new QuestionBoard(mapOfQuestionsJeopardy);
+		QuestionBoard questionBoardDoubleJeopardy = new QuestionBoard(mapOfQuestionsDoubleJeopardy);
     
 
 		
@@ -141,7 +145,7 @@ public class GameDriver {
 	    
 	    while(true)
 	    {
-	    	Question new_question = questionBoard.GetNextQuestion("SCIENCE.csv");
+	    	Question new_question = questionBoardJeopardy.GetNextQuestion("SCIENCE.csv");
 	    	System.out.println();
 	    	System.out.println(new_question.toString() + "?: ");
 	    	

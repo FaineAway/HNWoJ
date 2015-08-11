@@ -22,27 +22,34 @@ public class ReadCSV{
             
             //Read the CSV file header to skip it
             fileReader.readLine();
-           
+    		int score = 200;
             //Read the file line by line starting from the second line
             while ((line = fileReader.readLine()) != null) {
                 //Get all tokens available in line
-            	
+
                 String[] tokens = line.split(",");
                 if (tokens.length > 0) {
                 	//Create a new student object and fill his  data
                 	//System.out.println("question: " + tokens[1]);
                 	//int numAnswers = Integer.parseInt(tokens[2]);
-                	
+            		if (questionArray.size()==5) {
+            			score = 400;
+            		}
                 	ArrayList<String> answersArray = new ArrayList<String>();
                 	String query = tokens[1];
                 	int numAnswers = Integer.parseInt(tokens[2]);
                 	
                 	//ArrayList<String> answersArray = new ArrayList<String>();
+
                 	for (int j= 0 ; j<numAnswers; j++){
                 			answersArray.add(tokens[j+3]);
                 	}
-                	Question question = new Question(100, query, answersArray);
+                	Question question = new Question(score, query, answersArray);
                 	questionArray.add(question);
+        			if (questionArray.size()>=5) {
+        				score += 400;
+        			}
+        			else score += 200;
 					//System.out.println("answers: " + answersArray);
 				} 
             }
@@ -109,13 +116,26 @@ public class ReadCSV{
 
 	}
 	
-	public static QuestionCategory getCategoryAndQuestions(String fileName) {
+	public static QuestionCategory getCategoryAndQuestionsJeopardy(String fileName) {
 		
 		ArrayList<Question> questionArray = new ArrayList<Question>();
 		questionArray = readCSVCategory(fileName);
 		//System.out.println("category: " + questionArray);
 		QuestionCategory questionCategory = new QuestionCategory("history");
 		for (int i=0; i<5; i++){
+			boolean didItWork = questionCategory.AddQuestion(questionArray.get(i));
+			//System.out.println("question: " + questionArray.get(i));
+		}
+		return questionCategory;
+	}
+	
+	public static QuestionCategory getCategoryAndQuestionsDoubleJeopardy(String fileName) {
+		
+		ArrayList<Question> questionArray = new ArrayList<Question>();
+		questionArray = readCSVCategory(fileName);
+		//System.out.println("category: " + questionArray);
+		QuestionCategory questionCategory = new QuestionCategory("history");
+		for (int i=5; i<10; i++){
 			boolean didItWork = questionCategory.AddQuestion(questionArray.get(i));
 			//System.out.println("question: " + questionArray.get(i));
 		}
