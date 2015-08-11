@@ -11,7 +11,7 @@ public class GameDriver {
 		int player_turn = 1;
 		
 		// File Parsings
-		String Category1name = "Cat1";
+/*		String Category1name = "Cat1";
 		String Category2name = "Cat2";
 		String Category3name = "Cat3";
 		String Category4name = "Cat4";
@@ -80,9 +80,39 @@ public class GameDriver {
 		q_board.put(Category5name, question_cat5);
 		q_board.put(Category6name, question_cat6);
 		
-		QuestionBoard final_question_board = new QuestionBoard(q_board);
+		QuestionBoard final_question_board = new QuestionBoard();
 		
 		// Boom have a populated board... maybe...
+*/		
+		
+    	//parse files
+    	ArrayList<String> categoryArray = new ArrayList<String>();
+    	ArrayList<Question> questionArray = new ArrayList<Question>();
+    	HashMap mapOfQuestions = new HashMap();
+		
+    	String userDir = System.getProperty("user.dir");
+    	String fileName = userDir + "/../ART AND LITERATURE/categories.csv";
+		//System.out.println(fileName);
+    	categoryArray = ReadCSV.readCSVTitles(fileName);
+		//System.out.println(categoryArray);
+		
+		for (int i=0; i<6; i++){
+			String categoryName = categoryArray.get(i);
+			QuestionCategory questionCategory = new QuestionCategory(categoryName);
+	    	fileName = "C:\\WOJ1\\ART AND LITERATURE\\" + categoryName;
+			questionCategory = ReadCSV.getCategoryAndQuestions(fileName);
+			//System.out.println("category: " + categoryName);
+			mapOfQuestions.put(categoryName, questionCategory);
+			
+		}
+		
+		//create question board
+		QuestionBoard questionBoard = new QuestionBoard(mapOfQuestions);
+		
+    
+
+		
+		
 		
 		String player1_name;
 		String player2_name;
@@ -111,8 +141,9 @@ public class GameDriver {
 	    
 	    while(true)
 	    {
-	    	Question new_question = final_question_board.GetNextQuestion("Cat2");
-	    	System.out.println(new_question.toString() + "User Response?:");
+	    	Question new_question = questionBoard.GetNextQuestion("SCIENCE.csv");
+	    	System.out.println();
+	    	System.out.println(new_question.toString() + "?: ");
 	    	
 	    	String playerresponse = scanner.next();
 	    	
