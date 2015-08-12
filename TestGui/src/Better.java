@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -395,12 +396,18 @@ public class Better {
                         case 12:
                             repeat = false;
                             Wheel.setText("FreeTurn!");
-                            if (current_player == 1)
+                            if (current_player == 1) {
                                 player_one_freeturn = true;
-                            if (current_player == 2)
+                                player1token.setEnabled(true);
+                            }
+                            if (current_player == 2) {
                                 player_two_freeturn = true;
-                            if (current_player == 3)
+                                player2token.setEnabled(true);
+                            }
+                            if (current_player == 3) {
                                 player_three_freeturn = true;
+                                player3token.setEnabled(true);
+                            }
                             break;
                     }
 
@@ -413,8 +420,11 @@ public class Better {
                             "Player 1 use free turn?",
                             "FreeTurn!",
                             JOptionPane.YES_NO_OPTION);
-                    if(n == JOptionPane.YES_OPTION)
+                    if(n == JOptionPane.YES_OPTION) {
                         current_player--;
+                        player1token.setEnabled(false);
+                    }
+
                 }
 
                 if(current_player == 2 && player_two_freeturn){
@@ -423,8 +433,10 @@ public class Better {
                             "Player 2 use free turn?",
                             "FreeTurn!",
                             JOptionPane.YES_NO_OPTION);
-                    if(n == JOptionPane.YES_OPTION)
+                    if(n == JOptionPane.YES_OPTION) {
                         current_player--;
+                        player2token.setEnabled(false);
+                    }
                 }
 
                 if(current_player == 3 && player_three_freeturn){
@@ -433,14 +445,31 @@ public class Better {
                             "Player 3 use free turn?",
                             "FreeTurn!",
                             JOptionPane.YES_NO_OPTION);
-                    if(n == JOptionPane.YES_OPTION)
+                    if(n == JOptionPane.YES_OPTION) {
                         current_player--;
+                        player3token.setEnabled(false);
+                    }
                 }
 
 
                 current_player++;
                 if (current_player == 4)
                     current_player = 1;
+
+                if(current_player == 1) {
+                    player1Label.setFont(new Font("Helvetica Neue", Font.BOLD, 30));
+                    player3Label.setFont(new Font("Helvetica Neue", Font.PLAIN, 24));
+                }
+                else if (current_player == 2){
+                    player2Label.setFont(new Font("Helvetica Neue", Font.BOLD, 30));
+                    player1Label.setFont(new Font("Helvetica Neue", Font.PLAIN, 24));
+                }
+
+                else if (current_player == 3){
+                    player3Label.setFont(new Font("Helvetica Neue", Font.BOLD, 30));
+                    player2Label.setFont(new Font("Helvetica Neue", Font.PLAIN, 24));
+                }
+
 
                 spin_counter++;
                 SpinCountNumber.setText("" + spin_counter);
