@@ -85,6 +85,7 @@ public class Better {
     public int spin_counter;
     public int current_player;
     public QuestionBoard round_1_question_board;
+    public QuestionBoard round_2_question_board;
 
     public Better() {
         NEWGAMEButton.addMouseListener(new MouseAdapter() {
@@ -155,14 +156,21 @@ public class Better {
                     switch (enum_spin) {
                         case 1:
                             repeat = false;
-                            Wheel.setText("Category1");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(1));
                             if (cat1_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
 
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -187,14 +195,22 @@ public class Better {
                             break;
                         case 2:
                             repeat = false;
-                            Wheel.setText("Category2");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(2));
                             if (cat2_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
 
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
+
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -219,14 +235,21 @@ public class Better {
                             break;
                         case 3:
                             repeat = false;
-                            Wheel.setText("Category3");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(3));
                             if (cat3_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
 
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -251,14 +274,21 @@ public class Better {
                             break;
                         case 4:
                             repeat = false;
-                            Wheel.setText("Category4");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(4));
                             if (cat4_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
 
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -283,14 +313,21 @@ public class Better {
                             break;
                         case 5:
                             repeat = false;
-                            Wheel.setText("Category5");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(5));
                             if (cat5_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
 
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -315,13 +352,21 @@ public class Better {
                             break;
                         case 6:
                             repeat = false;
-                            Wheel.setText("Category6");
+                            Wheel.setText(round_1_question_board.GetIndexCategoryName(6));
                             if (cat6_index <= 5) {
                                 category = round_1_question_board.GetIndexCategoryName(enum_spin);
                                 question = round_1_question_board.GetNextQuestion(category);
                                 query = question.toString();
                                 value = question.QueryValue();
+
+                                long startTime = System.currentTimeMillis();
                                 response = JOptionPane.showInputDialog(null, query + ": ", category, JOptionPane.PLAIN_MESSAGE);
+                                long endTime = System.currentTimeMillis();
+
+                                if (endTime-startTime > 15000)
+                                {
+                                    value = 0;
+                                }
                                 if (question.CheckAnswer(response)) {
                                     if (current_player == 1)
                                         player_one_score += value;
@@ -541,7 +586,36 @@ public class Better {
 
     public void LoadQuestions()
     {
-        String Category1name = "Cat1";
+        //parse files
+        ArrayList<String> categoryArray = new ArrayList<String>();
+        ArrayList<Question> questionArray = new ArrayList<Question>();
+        HashMap mapOfQuestionsJeopardy = new HashMap();
+        HashMap mapOfQuestionsDoubleJeopardy = new HashMap();
+
+        String userDir = System.getProperty("user.dir");
+        String fileName = userDir + "/../ART AND LITERATURE/categories.csv";
+        //System.out.println(fileName);
+        categoryArray = ReadCSV.readCSVTitles(fileName);
+        //System.out.println(categoryArray);
+
+        for (int i=0; i<6; i++){
+            String categoryNamecsv = categoryArray.get(i);
+            String categoryName = categoryNamecsv.substring(0, categoryNamecsv.length() - 4);
+            QuestionCategory questionCategoryJeopardy = new QuestionCategory(categoryName);
+            QuestionCategory questionCategoryDoubleJeopardy = new QuestionCategory(categoryName);
+            fileName = userDir + "/../ART AND LITERATURE/" + categoryNamecsv;
+            questionCategoryJeopardy = ReadCSV.getCategoryAndQuestionsJeopardy(fileName);
+            questionCategoryDoubleJeopardy = ReadCSV.getCategoryAndQuestionsDoubleJeopardy(fileName);
+            //System.out.println("category: " + categoryName);
+
+            mapOfQuestionsJeopardy.put(categoryName, questionCategoryJeopardy);
+            mapOfQuestionsDoubleJeopardy.put(categoryName, questionCategoryDoubleJeopardy);
+        }
+
+        //create question board
+        round_1_question_board = new QuestionBoard(mapOfQuestionsJeopardy);
+        round_2_question_board = new QuestionBoard(mapOfQuestionsDoubleJeopardy);
+        /*String Category1name = "Cat1";
         String Category2name = "Cat2";
         String Category3name = "Cat3";
         String Category4name = "Cat4";
@@ -610,6 +684,6 @@ public class Better {
         q_board.put(Category5name, question_cat5);
         q_board.put(Category6name, question_cat6);
 
-        round_1_question_board = new QuestionBoard(q_board);
+        round_1_question_board = new QuestionBoard(q_board);*/
     }
 }
