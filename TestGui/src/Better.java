@@ -64,6 +64,10 @@ public class Better {
     private JLabel playerCScore;
     private JPanel QuestionAnswerPanel;
     private JPanel PlayerScorePanel;
+    private JLabel FreeTurnAvailableLabel;
+    private JLabel player1token;
+    private JLabel player2token;
+    private JLabel player3token;
 
     private String player_one_name;
     private String player_two_name;
