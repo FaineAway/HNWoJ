@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="GamePanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1429" height="546"/>
+      <xy x="20" y="20" width="1429" height="552"/>
     </constraints>
     <properties>
       <background color="-12997419"/>
@@ -60,7 +60,7 @@
               <focusable value="false"/>
               <font size="48"/>
               <icon value="WheelOfFortuneSeason30Round1.png"/>
-              <text value="Category"/>
+              <text value=" "/>
             </properties>
           </component>
           <grid id="68c52" layout-manager="GridLayoutManager" row-count="6" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -70,11 +70,11 @@
             </constraints>
             <properties>
               <background color="-12664341"/>
-              <enabled value="false"/>
+              <enabled value="true"/>
             </properties>
             <border type="line"/>
             <children>
-              <component id="d8ef8" class="javax.swing.JButton" binding="CategoryAbutton" custom-create="true">
+              <component id="d8ef8" class="javax.swing.JButton" binding="CategoryAbutton">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="1" use-parent-layout="false"/>
                 </constraints>
@@ -154,7 +154,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <enabled value="false"/>
+                  <enabled value="true"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -167,7 +167,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <enabled value="false"/>
+                  <enabled value="true"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -180,7 +180,7 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <enabled value="false"/>
+                  <enabled value="true"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -195,7 +195,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="200"/>
                 </properties>
               </component>
               <component id="9d93" class="javax.swing.JLabel" binding="B2textbox">
@@ -207,7 +207,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="400"/>
                 </properties>
               </component>
               <component id="b08ed" class="javax.swing.JLabel" binding="B3textbox">
@@ -219,7 +219,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="600"/>
                 </properties>
               </component>
               <component id="f7276" class="javax.swing.JLabel" binding="B5textbox">
@@ -231,7 +231,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="1000"/>
                 </properties>
               </component>
               <component id="46033" class="javax.swing.JLabel" binding="C5textbox">
@@ -243,7 +243,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="1000"/>
                 </properties>
               </component>
               <component id="ec189" class="javax.swing.JLabel" binding="D5textbox">
@@ -255,7 +255,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="1000"/>
                 </properties>
               </component>
               <component id="6ae5e" class="javax.swing.JLabel" binding="E5textbox">
@@ -267,7 +267,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="1000"/>
                 </properties>
               </component>
               <component id="7e689" class="javax.swing.JLabel" binding="F5textbox">
@@ -279,7 +279,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="1000"/>
                 </properties>
               </component>
               <component id="21c75" class="javax.swing.JLabel" binding="B4textbox">
@@ -291,7 +291,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="800"/>
                 </properties>
               </component>
               <component id="ca07f" class="javax.swing.JLabel" binding="C1textbox">
@@ -303,7 +303,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="200"/>
                 </properties>
               </component>
               <component id="d8dc3" class="javax.swing.JLabel" binding="C2textbox">
@@ -315,7 +315,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="400"/>
                 </properties>
               </component>
               <component id="769ce" class="javax.swing.JLabel" binding="C3textbox">
@@ -327,7 +327,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="600"/>
                 </properties>
               </component>
               <component id="79c2b" class="javax.swing.JLabel" binding="C4textbox">
@@ -339,7 +339,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="800"/>
                 </properties>
               </component>
               <component id="843f0" class="javax.swing.JLabel" binding="D1textbox">
@@ -351,7 +351,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="200"/>
                 </properties>
               </component>
               <component id="9c57b" class="javax.swing.JLabel" binding="D2textbox">
@@ -363,7 +363,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="400"/>
                 </properties>
               </component>
               <component id="f8afb" class="javax.swing.JLabel" binding="D3textbox">
@@ -375,19 +375,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
-                </properties>
-              </component>
-              <component id="3fd52" class="javax.swing.JLabel" binding="D4textbox">
-                <constraints>
-                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="600"/>
                 </properties>
               </component>
               <component id="d317d" class="javax.swing.JLabel" binding="E1textbox">
@@ -399,7 +387,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="200"/>
                 </properties>
               </component>
               <component id="be146" class="javax.swing.JLabel" binding="E2textbox">
@@ -411,7 +399,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="400"/>
                 </properties>
               </component>
               <component id="15603" class="javax.swing.JLabel" binding="E3textbox">
@@ -423,7 +411,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="600"/>
                 </properties>
               </component>
               <component id="3d54f" class="javax.swing.JLabel" binding="E4textbox">
@@ -435,7 +423,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="800"/>
                 </properties>
               </component>
               <component id="37c9b" class="javax.swing.JLabel" binding="F1textbox">
@@ -447,7 +435,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="200"/>
                 </properties>
               </component>
               <component id="4f92f" class="javax.swing.JLabel" binding="F2textbox">
@@ -459,7 +447,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="400"/>
                 </properties>
               </component>
               <component id="c1bff" class="javax.swing.JLabel" binding="F3textbox">
@@ -471,7 +459,7 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="600"/>
                 </properties>
               </component>
               <component id="b1869" class="javax.swing.JLabel" binding="F4textbox">
@@ -483,7 +471,19 @@
                 <properties>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
-                  <text value="Label"/>
+                  <text value="800"/>
+                </properties>
+              </component>
+              <component id="3fd52" class="javax.swing.JLabel" binding="D4textbox">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="800"/>
                 </properties>
               </component>
             </children>
@@ -511,12 +511,12 @@
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=" "/>
             </properties>
           </component>
         </children>
       </grid>
-      <grid id="7f867" binding="QuestionAnswerPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="7f867" binding="QuestionAnswerPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -525,60 +525,7 @@
           <background color="-12997419"/>
         </properties>
         <border type="none"/>
-        <children>
-          <component id="e063c" class="javax.swing.JTextField" binding="AnswerFormtextbox">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties/>
-          </component>
-          <component id="431fc" class="javax.swing.JButton" binding="SUBMITButton" default-binding="true">
-            <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-15854360"/>
-              <foreground color="-1"/>
-              <text value="SUBMIT"/>
-            </properties>
-          </component>
-          <component id="19a86" class="javax.swing.JLabel" binding="enterYourAnswerHereLabel" default-binding="true">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-12997419"/>
-              <horizontalAlignment value="4"/>
-              <text value="Enter Your Answer Here:"/>
-            </properties>
-          </component>
-          <component id="854d7" class="javax.swing.JLabel" binding="questionLabel" default-binding="true">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <background color="-12997419"/>
-              <horizontalAlignment value="4"/>
-              <text value="Question:"/>
-            </properties>
-          </component>
-          <component id="5228f" class="javax.swing.JLabel" binding="QuestionDisplayLabel">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <text value="Label"/>
-            </properties>
-          </component>
-        </children>
+        <children/>
       </grid>
       <hspacer id="7f625">
         <constraints>
@@ -625,7 +572,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="f256f" class="javax.swing.JLabel" binding="playerALabel" default-binding="true">
+          <component id="f256f" class="javax.swing.JLabel" binding="player1Label" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -634,10 +581,10 @@
             <properties>
               <horizontalAlignment value="4"/>
               <horizontalTextPosition value="11"/>
-              <text value="Player A"/>
+              <text value="Player 1"/>
             </properties>
           </component>
-          <component id="c02b0" class="javax.swing.JLabel" binding="playerBLabel" default-binding="true">
+          <component id="c02b0" class="javax.swing.JLabel" binding="player2Label" default-binding="true">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -645,10 +592,10 @@
             </constraints>
             <properties>
               <horizontalAlignment value="4"/>
-              <text value="Player B"/>
+              <text value="Player 2"/>
             </properties>
           </component>
-          <component id="25433" class="javax.swing.JLabel" binding="playerCLabel" default-binding="true">
+          <component id="25433" class="javax.swing.JLabel" binding="player3Label" default-binding="true">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -656,7 +603,7 @@
             </constraints>
             <properties>
               <horizontalAlignment value="4"/>
-              <text value="Player C"/>
+              <text value="Player 3"/>
             </properties>
           </component>
           <component id="1cf09" class="javax.swing.JLabel" binding="playerAScore">
@@ -666,7 +613,7 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=" "/>
             </properties>
           </component>
           <component id="7e2f0" class="javax.swing.JLabel" binding="playerBScore">
@@ -676,7 +623,7 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=" "/>
             </properties>
           </component>
           <component id="848d4" class="javax.swing.JLabel" binding="playerCScore">
@@ -686,7 +633,7 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Label"/>
+              <text value=" "/>
             </properties>
           </component>
           <component id="f36a2" class="javax.swing.JLabel" default-binding="true">
@@ -699,36 +646,6 @@
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="11"/>
               <text value="Player Scores"/>
-            </properties>
-          </component>
-        </children>
-      </grid>
-      <grid id="49d80" binding="TimerPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-12997419"/>
-        </properties>
-        <border type="none"/>
-        <children>
-          <component id="2d4b9" class="javax.swing.JLabel" binding="TimerAmount">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties>
-              <text value="Label"/>
-            </properties>
-          </component>
-          <component id="26ca1" class="javax.swing.JLabel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Timer:"/>
             </properties>
           </component>
         </children>
