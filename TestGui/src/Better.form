@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Better">
-  <grid id="27dc6" binding="GamePanel" layout-manager="GridLayoutManager" row-count="6" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="GamePanel" layout-manager="GridLayoutManager" row-count="8" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1429" height="552"/>
+      <xy x="20" y="20" width="1566" height="1105"/>
     </constraints>
     <properties>
       <background color="-12997419"/>
@@ -21,7 +21,7 @@
       </component>
       <component id="bb200" class="javax.swing.JLabel" binding="WHEELOFJEOPARDYLabel" default-binding="true">
         <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="500" height="-1"/>
           </grid>
         </constraints>
@@ -35,34 +35,23 @@
       </component>
       <component id="89b65" class="javax.swing.JButton" binding="EXITButton" default-binding="true">
         <constraints>
-          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1558218"/>
           <text value="EXIT"/>
         </properties>
       </component>
-      <grid id="b7e8" binding="PicturePanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="b7e8" binding="PicturePanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-12997419"/>
         </properties>
         <border type="none"/>
         <children>
-          <component id="54345" class="javax.swing.JLabel" binding="Wheel">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <focusable value="false"/>
-              <font size="48"/>
-              <icon value="WheelOfFortuneSeason30Round1.png"/>
-              <text value=" "/>
-            </properties>
-          </component>
           <grid id="68c52" layout-manager="GridLayoutManager" row-count="6" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
@@ -130,21 +119,10 @@
                 </constraints>
                 <properties>
                   <enabled value="true"/>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
-                </properties>
-              </component>
-              <component id="97932" class="javax.swing.JLabel" binding="A4textbox">
-                <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="0"/>
-                  <text value="800"/>
                 </properties>
               </component>
               <component id="c0fa6" class="javax.swing.JLabel" binding="A3textbox">
@@ -155,6 +133,7 @@
                 </constraints>
                 <properties>
                   <enabled value="true"/>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -168,6 +147,7 @@
                 </constraints>
                 <properties>
                   <enabled value="true"/>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -181,6 +161,7 @@
                 </constraints>
                 <properties>
                   <enabled value="true"/>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -193,6 +174,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -205,6 +187,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -217,6 +200,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -229,6 +213,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
@@ -241,6 +226,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
@@ -253,6 +239,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
@@ -265,6 +252,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
@@ -277,6 +265,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="1000"/>
@@ -289,6 +278,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="800"/>
@@ -301,6 +291,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -313,6 +304,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -325,6 +317,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -337,6 +330,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="800"/>
@@ -349,6 +343,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -361,6 +356,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -373,6 +369,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -385,6 +382,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -397,6 +395,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -409,6 +408,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -421,6 +421,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="800"/>
@@ -433,6 +434,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="200"/>
@@ -445,6 +447,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="400"/>
@@ -457,6 +460,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="600"/>
@@ -469,6 +473,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="800"/>
@@ -481,6 +486,20 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <font size="26"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="800"/>
+                </properties>
+              </component>
+              <component id="97932" class="javax.swing.JLabel" binding="A4textbox">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="26"/>
                   <horizontalAlignment value="0"/>
                   <horizontalTextPosition value="0"/>
                   <text value="800"/>
@@ -488,17 +507,9 @@
               </component>
             </children>
           </grid>
-          <component id="26d6f" class="javax.swing.JButton" binding="SPINButton" default-binding="true">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="SPIN"/>
-            </properties>
-          </component>
           <component id="90cbc" class="javax.swing.JLabel" binding="SpintCountLabel">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <horizontalAlignment value="4"/>
@@ -508,7 +519,7 @@
           </component>
           <component id="4fe82" class="javax.swing.JLabel" binding="SpinCountNumber">
             <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value=" "/>
@@ -519,7 +530,7 @@
       <grid id="7f867" binding="QuestionAnswerPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-12997419"/>
@@ -529,7 +540,7 @@
       </grid>
       <hspacer id="7f625">
         <constraints>
-          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <hspacer id="ff095">
@@ -544,7 +555,7 @@
       </hspacer>
       <hspacer id="67bbb">
         <constraints>
-          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <hspacer id="ef444">
@@ -554,18 +565,18 @@
       </hspacer>
       <hspacer id="cc731">
         <constraints>
-          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <vspacer id="1df6b">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <grid id="f6d9" binding="PlayerScorePanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="f6d9" binding="PlayerScorePanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-12997419"/>
@@ -579,6 +590,7 @@
               </grid>
             </constraints>
             <properties>
+              <font size="24" style="1"/>
               <horizontalAlignment value="4"/>
               <horizontalTextPosition value="11"/>
               <text value="Player 1"/>
@@ -591,6 +603,7 @@
               </grid>
             </constraints>
             <properties>
+              <font size="24"/>
               <horizontalAlignment value="4"/>
               <text value="Player 2"/>
             </properties>
@@ -602,6 +615,7 @@
               </grid>
             </constraints>
             <properties>
+              <font size="24"/>
               <horizontalAlignment value="4"/>
               <text value="Player 3"/>
             </properties>
@@ -643,18 +657,94 @@
               </grid>
             </constraints>
             <properties>
+              <font size="28" style="1"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="11"/>
               <text value="Player Scores"/>
+            </properties>
+          </component>
+          <component id="3de51" class="javax.swing.JLabel" binding="player1token">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <icon value="Token.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="ad33b" class="javax.swing.JLabel" binding="player2token">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="Token.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="1a3b2" class="javax.swing.JLabel" binding="player3token">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <icon value="Token.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="83501" class="javax.swing.JLabel" binding="FreeTurnAvailableLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="28" style="1"/>
+              <text value="Free Turn"/>
             </properties>
           </component>
         </children>
       </grid>
       <vspacer id="2a066">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
+      <component id="54345" class="javax.swing.JLabel" binding="Wheel">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusable value="false"/>
+          <font size="48"/>
+          <text value="  "/>
+        </properties>
+      </component>
+      <component id="c5145" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="AwesomeWheel.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="26d6f" class="javax.swing.JButton" binding="SPINButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SPIN"/>
+        </properties>
+      </component>
+      <hspacer id="edef5">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="201">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
     </children>
   </grid>
 </form>
